@@ -23,11 +23,9 @@ let drawCard = () => {
             if (res.data.remaining == 0){
                 $(".new-card").empty();
                 generateCard(res);
-                console.log(res.data.remaining);
             }
             else {
                 generateCard(res);
-                console.log(res.data.remaining);
             }
         })
         .catch(err => console.log(res.data.remaining, err))
